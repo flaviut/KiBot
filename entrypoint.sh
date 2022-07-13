@@ -176,7 +176,7 @@ echo "**************************************************************************
 echo "*****************************************************************************************"
 echo
 echo
-echo KiBot GitHub Action v2 for KiCad 6 (Fixed version)
+echo "KiBot GitHub Action v2 for KiCad 6 (Fixed version)"
 echo
 echo
 kibot --version

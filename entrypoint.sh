@@ -172,4 +172,23 @@ function main {
     run
 }
 
+echo "*****************************************************************************************"
+echo "*****************************************************************************************"
+echo
+echo
+echo KiBot GitHub Action v2 for KiCad 6 (Fixed version)
+echo
+echo
+kibot --version
+dpkg -l kicad | grep kicad
+echo Debian: `cat /etc/debian_version`
+pcbnew_do --version
+kicost --version
+pcbdraw --version
+echo "iBoM:" `INTERACTIVE_HTML_BOM_NO_DISPLAY=True generate_interactive_bom.py --version 2> /dev/null | grep "^v"`
+echo
+echo
+echo "*****************************************************************************************"
+echo "*****************************************************************************************"
+
 main "$@"

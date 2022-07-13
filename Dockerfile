@@ -1,4 +1,4 @@
-FROM setsoft/kicad_auto:dev
+FROM setsoft/kicad_auto:10.4-5.1.9
 LABEL AUTHOR Salvador E. Tropea <set@ieee.org>
 LABEL Description="export various files from KiCad projects"
 

@@ -170,6 +170,29 @@ function main {
     run
 }
 
+echo "*****************************************************************************************"
+echo "*****************************************************************************************"
+echo
+echo
+echo KiBot GitHub Action v1 for KiCad 6
+echo
+echo "**********************************"
+echo "*** Please switch to v2 action ***"
+echo "**********************************"
+echo
+echo
+kibot --version
+dpkg -l kicad | grep kicad
+echo Debian: `cat /etc/debian_version`
+pcbnew_do --version
+kicost --version
+pcbdraw --version
+echo "iBoM:" `INTERACTIVE_HTML_BOM_NO_DISPLAY=True generate_interactive_bom.py --version 2> /dev/null | grep "^v"`
+echo
+echo
+echo "*****************************************************************************************"
+echo "*****************************************************************************************"
+
 # Removes quotes
 args=$(xargs <<<"$@")
 

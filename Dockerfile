@@ -1,4 +1,4 @@
-FROM setsoft/kicad_auto:dev_k6
+FROM setsoft/kicad_auto:ki6.0.5_Debian
 LABEL AUTHOR Salvador E. Tropea <set@ieee.org>
 LABEL Description="export various files from KiCad projects"
 

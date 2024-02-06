@@ -1,4 +1,4 @@
-FROM ghcr.io/inti-cmnb/kicad7_auto_full:1.6.3-4_k7.0.10_d12.1_b3.5.1
+FROM ghcr.io/inti-cmnb/kicad6_auto_full:1.6.3-2_k6.0.11_d12.1_b3.5.1
 LABEL AUTHOR Salvador E. Tropea <stropea@inti.gob.ar>
 LABEL Description="Export various files from KiCad projects (KiCad 7)"
 

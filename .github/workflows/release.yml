@@ -73,11 +73,6 @@ jobs:
         with:
           name: package
 
-      - name: Debug
-        run: |
-          ls -la
-          ls -la ${{needs.build.outputs.DEB_NAME}}
-
       - name: Release
         uses: docker://antonyurchenko/git-release:latest
         env:
@@ -87,7 +82,7 @@ jobs:
           CHANGELOG_FILE: "CHANGELOG.md"
         with:
           args: |
-            package/${{needs.build.outputs.DEB_NAME}}
+            ${{needs.build.outputs.DEB_NAME}}
 
       - name: Trigger kicad_auto image build
         run: |

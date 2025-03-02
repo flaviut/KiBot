@@ -292,6 +292,16 @@ update_gha:
 	git push
 	git tag -f -a v2_k8 -m "GitHub Action v2 for KiCad 8"
 	git push origin -f --tags
+	cp Dockerfile_dk9 Dockerfile
+	git commit -m "[CI/CD] Updating Github Action v2 for KiCad 9 development" Dockerfile
+	git push
+	git tag -f -a v2_dk9 -m "GitHub Action v2 for KiCad 8 (development)"
+	git push origin -f --tags
+	cp Dockerfile_k9 Dockerfile
+	git commit -m "[CI/CD] Updating Github Action v2 for KiCad 9 latest" Dockerfile
+	git push
+	git tag -f -a v2_k9 -m "GitHub Action v2 for KiCad 8"
+	git push origin -f --tags
 
 
 i18n:
